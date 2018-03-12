@@ -2,7 +2,38 @@
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
 body {
+   background: linear-gradient(#ff6600, #00E3FF);  
+    max-width: 980px;
+    margin: auto;  
     padding-top: 30px;
     padding-bottom: 20px;
-    color: green;
+/*     color: orange; */
 }
+
+
+/*Styling Features*/
+li.feature-item {
+    display: block;
+  font-size: 20px;
+}
+
+li.feature-item:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e067";
+    font-family: 'Glyphicons Halflings';
+    font-size: 10px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
+}  
+.col-auto {
+  flex:vertical;
+}
+
+/* Hide AddToAny vertical share bar when screen is less than 980 pixels wide */
+@media screen and (max-width: 980px) {
+    .a2a_floating_style.a2a_vertical_style { display: none; }
+}
+
+

@@ -1,54 +1,174 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Add proper head tag to provide a page description for search
-             engines. -->
-        <title>API Superstore</title>
-        <!-- Bootstrap CSS Framework -->
-        <!-- You can remove the ``link`` tags below if you don't want to use
-             Bootstrap with your site. If you choose to use Bootstrap, be sure
-             to reference the resources and the Bootstrap official
-             documentation: http://getbootstrap.com.
-
-             Please Note: This repo does not include the Bootstrap Javascript
-             plugins, so you cannot use the features documented under
-             "Javascript" on the Bootstrap documentation site. -->
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+				<meta name="description" content="API Superstore">
+				<meta name="author" content="Summer Meyer">
+				<title>API Superstore</title>
+    	<!-- Bootstrap CSS -->
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
-        <!-- End Bootstrap CSS Framework -->
+      <!-- End Bootstrap CSS -->
 
-        <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
-             support bookmarking. -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="favicon" href="favicon.ico">
+			<!-- Custom styles -->
+				<link rel="stylesheet" href="main.css">
+      
+			<!-- Font awesome styles -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+			<!-- Icons -->
+        <link rel="apple-touch-icon" sizes="152x152" href="apiSuperstoreLogo152x152.png">
+				<link rel="apple-touch-icon" sizes="180x180" href="apiSuperstoreLogo180x180.png">
+				<link rel="apple-touch-icon" sizes="245x245" href="apiSuperstoreLogo245x245.png">
+        <link rel="shortcut icon" href="favicon.png">
 
     </head>
-    <body>
-        <!-- Note: If you do not see a lamp icon in the heading below
-             when you view this file in a web browser, then there is an issue
-             with how Bootstrap is linked to this page. -->
-        <h1><span class="glyphicon glyphicon-lamp"></span> Hello World!</h1>
-        <!-- TODO: Populate this page with all the content you deem
-             necessary to create a compelling product page! -->
+	
+<!-- The scrollable area -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-        <!-- TODO: Create an area to put the explainer video. -->
+<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->			
+<nav id="navbar-scroll" class="navbar navbar-light bg-light">
+<!--   <a class="navbar-brand" href="#">API Superstore</a> -->
+	
+	<a class="navbar-brand" href="#">
+    <img src="favicon.png" width="30" height="30" class="d-inline-block align-top" alt="API Superstore logo">
+    API Superstore
+  </a>
+	
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#features">Features</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#testimonials">Testimonials</a>
+    </li>
+		<li class="nav-item">
+      <a class="nav-link" href="#signup">Signup</a>
+    </li>
+  </ul>
+</nav>
 
-        <!-- TODO: Create an area to put the long product description. -->
 
-        <!-- TODO: Create an area to put customer testimonials. -->
-
-        <!-- TODO: Create an area to show features. -->
-
-        <!-- TODO: Create an area to show company contact info (phone,
-             location, etc.) -->
-
-        <!-- TODO: Create an area that allows users to Share links to the
-             page. -->
-
-        <!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
-    </body>
+<!-- Product description -->
+<div id="about" class="jumbotron">
+  <h1>About</h1>
+	
+	<div class="container">
+	
+  <p>The API Superstore provides fast access to the most cutting-edge APIs available online.</p>
+	<p>From ecommerce to maps, we have all the services that customers expect.</p>
+	<p>Save yourself the headache and use our API catalog to enhance your business today!</p>
+</div>
+	 </div>    
+	<!-- Explainer video. -->
+	<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L48g1ZWLMdo?rel=0"></iframe>
+	</div>
+	 
+	<!-- Features -->
+	<div id="features" class="jumbotron">
+		<h1>Features</h1>
+		
+		<div class="container">
+		
+			<div class="row">
+			<div class="col-md-6">
+				
+		<ul>
+			<li class="feature-item">intuitive editor</li>
+			<li class="feature-item">unlimited APIs</li>
+			<li class="feature-item">simply styling functionality</li>
+			<li class="feature-item">search engine optimized</li>
+				</ul>
+				</div>
+				<div class="col-md-6">
+														
+			<ul>
+			<li class="feature-item">easy-to-use</li>
+			<li class="feature-item">seamless integration</li>
+			<li class="feature-item">ratings and reviews</li>
+			<li class="feature-item">money back guarantee</li>
+		</ul>
+				</div>
+			</div>
+			
+	</div>
+</div>
+	<!-- Call to action link-->
+		<div id="signup" class="jumbotron">
+			<h1>Signup</h1>
+		
+			<button type="button" class="btn btn-primary btn-lg btn-block">Signup and save!
+				<span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+				</button>
+		</div>
+	
+	<!-- Testimonials -->
+	<div id="testimonials" class="jumbotron">
+			<h1>Testimonials</h1>
+		
+	<div class="container">
+			<ul class="list-unstyled">
+				<li class="media">
+					
+					<img class="mr-3 img-thumbnail rounded-circle img-fluid" src="/design/Tiger.jpg" alt="Tiger Lilly">
+					
+						<div class="media-body">
+						<h5 class="mt-0 mb-1">"My mind is officially blown. What a great investment!"</h5>
+						Tiger Lilly, Portland, OR
+					</div>
+				</li>
+			</ul>
+			<div class="container">
+				<ul class="list-unstyled">
+				<li class="media">
+					<img class="mr-3 img-thumbnail rounded-circle img-fluid" src="/design/Bear.JPG" alt="Winnie the Ewe">
+					<div class="media-body">
+						<h5 class="mt-0 mb-1">"Thanks for making all these APIs available in an intuitive interface. Worth every penny!"</h5>
+						Winne the Ewe, Vancouver, Canada
+					</div>
+				</li>
+					</ul>
+			</div>
+			<div class="container">
+				<ul class="list-unstyled">
+				<li class="media">
+					<img class="mr-3 img-thumbnail rounded-circle img-fluid" src="/design/Hippo.jpg" alt="Hip Otto Mus">
+					<div class="media-body">
+						<h5 class="mt-0 mb-1">"I have been able to do more with my family while keeping my customers happy too. It's the best of both worlds. Thanks API Superstore!"</h5>
+						Hip Otto Mus, Santa Cruz, CA
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- Share links -->
+		<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px; background:transparent;">
+			<h6><small>Share This!</small></h6>
+			<a class="a2a_button_facebook"></a>
+			<a class="a2a_button_twitter"></a>
+			<a class="a2a_button_instagram"></a>
+		</div>
+		<script async src="https://static.addtoany.com/menu/page.js"></script>	
+	
+	<!-- Company contact info -->
+	<!-- Footer -->
+		<footer class="py-5 bg-light">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-auto mr-auto">Phone: 206-555-1234<br> Email: <a href="mailto:info@apisuperstore.com">info@apisuperstore.com</a><br> Seattle, Washington, USA</div>
+					<div class="col-auto">&copy; API Superstore 2018</div>
+				</div>
+			</div>
+		</footer>
+	
+		</body>
 </html>
