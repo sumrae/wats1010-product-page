@@ -2,26 +2,39 @@
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
 body {
-   background: linear-gradient(#ff6600, #00E3FF);  
-    max-width: 980px;
-    margin: auto;  
-    padding-top: 30px;
-    padding-bottom: 20px;
-/*     color: orange; */
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  position: relative;
+  background: -webkit-linear-gradient(#ff6600, #00E3FF);
+  background: -moz-linear-gradient(#ff6600, #00E3FF);
+  background: -o-linear-gradient(#ff6600, #00E3FF);
+  background: linear-gradient(#ff6600, #00E3FF);
+  max-width: 980px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: darkgray;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+}
 
 /*Styling Features*/
 li.feature-item {
     display: block;
   font-size: 20px;
+  padding: 5px;
 }
 
 li.feature-item:before {
     /*Using a Bootstrap glyphicon as the bullet point*/
     content: "\e067";
     font-family: 'Glyphicons Halflings';
-    font-size: 10px;
+    font-size: 15px;
     float: left;
     margin-top: 4px;
     margin-left: -17px;
@@ -35,5 +48,4 @@ li.feature-item:before {
 @media screen and (max-width: 980px) {
     .a2a_floating_style.a2a_vertical_style { display: none; }
 }
-
 
