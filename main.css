@@ -14,7 +14,7 @@ body {
   margin: auto;
   padding-top: 30px;
   padding-bottom: 20px;
-  color: darkgray;
+/*   color: darkgray; */
 }
 
 .navbar {
@@ -22,10 +22,31 @@ body {
   align-items: center;
   padding: .5rem 1rem;
 }
+a.nav-link {
+    font-size: 1rem
+}
 
+a {
+    color: #20A1AC;
+    text-decoration: none;
+    background-color: transparent;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #F88379;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #F88379;
+    border-color: #F88379;
+}
+.button.btn.btn-primary.btn-lg.btn-block {
+  color: #F88379;
+}
 /*Styling Features*/
 li.feature-item {
-    display: block;
+  display: block;
   font-size: 20px;
   padding: 5px;
 }
@@ -43,6 +64,7 @@ li.feature-item:before {
 .col-auto {
   flex:vertical;
 }
+
 
 /* Hide AddToAny vertical share bar when screen is less than 980 pixels wide */
 @media screen and (max-width: 980px) {
