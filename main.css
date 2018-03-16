@@ -6,10 +6,10 @@ body {
   font-weight: 400;
   line-height: 1.5;
   position: relative;
-  background: -webkit-linear-gradient(#ff6600, #00E3FF);
-  background: -moz-linear-gradient(#ff6600, #00E3FF);
-  background: -o-linear-gradient(#ff6600, #00E3FF);
-  background: linear-gradient(#ff6600, #00E3FF);
+  background: -webkit-linear-gradient(#F88379, #00E3FF);
+  background: -moz-linear-gradient(#F88379, #00E3FF);
+  background: -o-linear-gradient(#F88379, #00E3FF);
+  background: linear-gradient(#F88379, #00E3FF);
   max-width: 980px;
   margin: auto;
   padding-top: 30px;
