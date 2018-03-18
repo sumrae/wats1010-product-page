@@ -1,8 +1,14 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
-
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
 body {
-  font-size: 1rem;
+/*   font-size: 1rem; */
+  font-size: 16px;
+  font-family: "Avenir Next", "Avenir", "Avenir Next W04", "Avenir Next W02", sans-serif;
+  color: #232323;
   font-weight: 400;
   line-height: 1.5;
   position: relative;
@@ -14,11 +20,11 @@ body {
   margin: auto;
   padding-top: 30px;
   padding-bottom: 20px;
-/*   color: darkgray; */
 }
-
+/*Styling Navigation*/
 .navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: .5rem 1rem;
 }
@@ -36,38 +42,57 @@ a {
     background-color: #F88379;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #F88379;
-    border-color: #F88379;
+.jumbotron {
+  margin-top: 50px;
+  padding: 50px;
+  background: #cbe1fe;
 }
-.button.btn.btn-primary.btn-lg.btn-block {
-  color: #F88379;
-}
-/*Styling Features*/
-li.feature-item {
-  display: block;
-  font-size: 20px;
-  padding: 5px;
+/*Styling Testimonials*/
+.media {
+    max-width: 980px;
+    margin: 50px;
 }
 
-li.feature-item:before {
-    /*Using a Bootstrap glyphicon as the bullet point*/
-    content: "\e067";
-    font-family: 'Glyphicons Halflings';
-    font-size: 15px;
+.blurb__byline p {
+    margin: 0;
+    letter-spacing: 0.1em;
+    line-height: 1.1;
+}
+.blurb__byline {
+    font-family: "Rajdhani", "DIN", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .03em;
+  
+}
+.blurb__byline p:last-child {
+    font-size: 13px;
+    opacity: .5;
+}
+
+.blurb__footer {
+  display: flex;
+  min-height: 64px;
+  border-bottom: 1px solid #F88379;
+}
+
+
+/*Styling Features*/
+i.fa.fa-check-square-o {
+  display: block;
+  padding: 10px;
+}
+i.fa.fa-check-square-o:before {
     float: left;
     margin-top: 4px;
     margin-left: -17px;
-    color: #CCCCCC;
+    color: #F88379;
 }  
 .col-auto {
   flex:vertical;
 }
 
-
 /* Hide AddToAny vertical share bar when screen is less than 980 pixels wide */
 @media screen and (max-width: 980px) {
     .a2a_floating_style.a2a_vertical_style { display: none; }
 }
-
